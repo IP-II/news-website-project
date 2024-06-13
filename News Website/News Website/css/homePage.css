@@ -1,0 +1,236 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply styles to different sections and elements */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.header-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.hero-section {
+    background-image: url('path/to/hero-image.jpg');
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 200px 0;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.search-form {
+    margin-top: 20px;
+}
+
+.search-form input {
+    width: 300px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.search-form button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.slider-section {
+    height: 400px;
+    overflow: hidden;
+}
+
+.slider-container {
+    display: flex;
+    width: 300%;
+    animation: slide 15s infinite;
+}
+
+.slider-image {
+    flex: 1;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    33.33% {
+        transform: translateX(-100%);
+    }
+    66.66% {
+        transform: translateX(-200%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.latest-news-section {
+    padding: 50px 0;
+    background-color: #f2f2f2;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.featured-section {
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* Media queries for responsive design */
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .hero-section {
+        padding: 150px 0;
+    }
+}
+
+.welcome-heading{
+    color: #333;
+    font-size: 40px;
+    margin-bottom: 15px;
+    
+}
+.welcome-text{
+    color: #333;
+    font-size: 25px; 
+    margin-bottom: 45px;
+}
+.btn{
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.news-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.news-article {
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.image img {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+}
+
+.content {
+    margin-top: 10px;
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+p {
+    font-size: 14px;
+    color: #888;
+}
+
+/* Add any additional styling as per your requirements */
